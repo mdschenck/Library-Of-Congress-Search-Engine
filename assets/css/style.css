@@ -1,0 +1,169 @@
+html {
+  height: 100%;
+  max-width: 850px;
+  align-content: center;
+  vertical-align: middle;
+  margin: auto;
+}
+
+body {
+  background: linear-gradient(#757575, #050505);
+  min-height: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+header {
+  text-align: left;
+  background-color: #c0c7cf;
+  color: #050505;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  
+}
+
+header h1 {
+  display: block;
+  color: hsl(0, 0%, 100%);
+}
+
+header h2 {
+  display: Inline;
+  color: hsl(0, 0%, 100%);
+}
+
+.wrapper {
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.card {
+  margin-left: 25%;
+  width: 50%;
+  background-color: rgb(160, 35, 77);
+
+  border-color: rgb(245, 244, 244);
+  border-style: solid;
+  border-radius: 15px;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+
+.card h2 {
+text-align: center;
+}
+
+
+.card input {
+  width: 60%
+  margin-left: 20%;
+}
+
+ul {
+  list-style-type: none;
+  align-content: center;
+}
+
+
+.btn {
+  border: none;
+  background-color: #c0c7cf;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 2px 2px 2px 2px;
+  padding: 7px;
+  text-align: center;
+  cursor: pointer;
+  width: 60%;
+  margin-left:15%;
+
+}
+
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
+}
+
+#searchInput {
+  width: 80%;
+  margin-left: 10%;
+  line-height: 30px;
+}
+
+#searchButton {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5px;
+  border: none;
+  background-color: #c0c7cf;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  line-height: 20px;
+  padding: 7px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+#resultsPgSearchInput {
+  width: 100%;
+}
+
+#resultsPgSearchButton {
+  width: 100%;
+  margin-left: 0%;
+  margin-top: 5px;
+  border: none;
+  background-color: #c0c7cf;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  line-height: 20px;
+  padding: 7px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.searchResultsCard {
+  background-color: #c0c7cf;
+  color: #050505;
+
+  border-color: rgb(245, 244, 244);
+  border-style: solid;
+  border-radius: 15px;
+  min-height: 175px;
+  max-height: 175px;
+}
+
+.searchResultsCard p {
+  width: 98%;
+  text-align: left;
+}
+
+.searchResultsCard h2 {
+text-align: left;
+font-size: 20px;
+}
+
+.lsCard {
+
+  width: 100%;
+  background-color: rgb(160, 35, 77);
+
+  border-color: rgb(245, 244, 244);
+  border-style: solid;
+  border-radius: 15px;
+  min-height: 200px;
+  max-height: 200px;
+}
+
