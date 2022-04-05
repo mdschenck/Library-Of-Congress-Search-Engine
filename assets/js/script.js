@@ -1,22 +1,14 @@
-var searchResults = document.querySelector("#searchResults");
+var searchFormEl = document.querySelector("#searchForm");
+var searchInput = document.querySelector("#searchInput");
 
-var searchResults = function (event) {
-  for (i = 0; i < 15; i++) {
-    var displayResults = document.createElement("tr");
-    displayResults.setAttribute("class", "row");
-    displayResults.innerHTML =
-      // ${*** INSERT RESULTS HERE?}
+function addEventListeners() {
+  searchFormEl.addEventListener("submit", function (event) {
+    event.preventDefault();
+    var searchTerm = searchFormEl.value;
+    var format = formats.value;
 
-      `
-      <div class="searchResultsCard">
-      <div class="card-header">
-      <h2>This is an example search result</h2>
-      </div>
-      <div class="card-body">
-      <p>Example search results Example search results Example search results Example search results Example search results Example search results Example search results Example search results  </p>
-      </div>
-      </div>
-    `;
-    searchResults.append(displayResults);
-  }
-};
+    document.location.replace(
+      "/results.html?q=" + searchTerm + "&format=" + format
+    );
+  });
+}

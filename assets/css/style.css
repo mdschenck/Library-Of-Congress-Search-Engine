@@ -43,13 +43,10 @@ header h2 {
 }
 
 .card {
-  margin-left: 25%;
-  width: 50%;
-  background-color: rgb(160, 35, 77);
-
-  border-color: rgb(245, 244, 244);
-  border-style: solid;
-  border-radius: 15px;
+  margin-top:15%;
+  margin-left: 12.5%;
+  width: 75%;
+  background-color: rgb(170, 161, 164);
   min-height: 200px;
   max-height: 200px;
 }
@@ -99,12 +96,18 @@ button[disabled] {
   line-height: 30px;
 }
 
+#formats {
+  width: 80%;
+  margin-left: 10%;
+  line-height: 30px;
+}
+
 #searchButton {
-  width: 50%;
-  margin-left: 25%;
+  width: 75%;
+  margin-left: 12.5%;
   margin-top: 5px;
   border: none;
-  background-color: #c0c7cf;
+  background-color: rgb(72, 184, 146);
   border-radius: 10px;
   color: hsl(0, 0%, 100%);
   font-size: 20px;
