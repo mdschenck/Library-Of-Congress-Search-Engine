@@ -1,5 +1,5 @@
 var searchFormEl = document.querySelector("#searchForm");
-var searchInput = document.querySelector("#searchInput");
+var searchInputEl = document.querySelector("#searchInput");
 var formatEL = document.querySelector("#format");
 
 var formSubmitHandler = function (event) {
@@ -9,7 +9,7 @@ var formSubmitHandler = function (event) {
   searchString = searchString.trim();
   console.log(searchString);
   searchURL = searchURL + searchString;
-  searchURL = searchURL + "&format=" + formatEL.value;
+  // searchURL = searchURL + "&format=" + formatEL.value;
   console.log(searchURL);
   document.location.replace(searchURL);
 };
