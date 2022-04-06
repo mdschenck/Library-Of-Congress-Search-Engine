@@ -22,53 +22,57 @@
     <title>Library of Congress Search</title>
   </head>
   <body>
-    <header>
-        <h1>Library of Congress</h1>
-      </header>
     <div class="row">
 
+            <!-- Main page content  -->
+    <div class="card2A p-4">
+      <!--Card with form -->
+      <div class="col-md-4">
+          <div class="card2">
+              <h5 class="card-header bg-light">Library of Congress Search Engine</h5>
+              <div class="card-body">
+                  <h5 class="card-title text-light"></h5>
+                  <form>
+                      <input type="text" class="form-control" id="query"><br>
+                    </input>
+                      <select class="form-control" id="format">
+                        <datalist id="formats">
+                          <option >Manuscripts</option>
+                          <option >Music</option>
+                          <option >Recordings</option>
+                          <option >Books</option>
+                          <option >Newspapers</option>
+                        </datalist>
+                      </select>
+                      <button type="button" class="btn1 btn-primary" id="search_btn">
+                      Search
+                      </button>
+                      <button type="button" class="btn2 btn-secondary" id="search_btn">
+                        ← Go Back
+                        </button>
+                  </form>
+              </div>
+          </div>
+      </div>
+        <div class="searchResults col-auto float-right" id="searchResults">
+          <div class="card-header"><h2>${Title}</h2></div>
+          <div><h3>${Subject} - ${day}</h3></div>
+          <div class="card-body"><p> ${description} </p></div>
+          <div><a href="${readMore}" target="top">Read More</a></div>
 
-        <div class="lsCard col-4" id="leftSideSearchBar">
-            <div class="card-header">
-                <h3>Library of Congress Search Engine</h3>
-            </div>
-            <div class="card-body">
-                <form>
-                    <input
-                    type="text"
-                    placeholder="Search Library of Congress Archives"
-                    id="resultsPgSearchInput">
-                </form>
-            </div>
-            <div>
-                <button id="resultsPgSearchButton" class"searchBtn">Search</button>
-            </div>
         </div>
-        <div class="searchResults col-8" id="searchResults">
-            <div class="searchResultsCard">
-                <div class="card-header">
-                <h2>This is an example search result</h2>
-                </div>
-                <div class="card-body">
-                <p>Example search results Example search results Example search results Example search results Example search results Example search results Example search results Example search results  </p>
-                </div>
-            </div>
-            <div class="searchResultsCard">
-                <div class="card-header">
-                <h2>This is an example search result</h2>
-                </div>
-                <div class="card-body">
-                <p>Example search results Example search results Example search results Example search results Example search results Example search results Example search results Example search results  </p>
-                </div>
-            </div>
-            <div class="searchResultsCard">
-                <div class="card-header">
-                <h2>This is an example search result</h2>
-                </div>
-                <div class="card-body">
-                <p>Example search results Example search results Example search results Example search results Example search results Example search results Example search results Example search results  </p>
-                </div>
-            </div>        
+        <div class="searchResults col-8 float-right" id="searchResults">
+          <div class="card-header"><h2>${Title}</h2></div>
+          <div><h3>${Subject} - ${day}</h3></div>
+          <div class="card-body"><p> ${description} </p></div>
+          <div><a href="${readMore}" target="top">Read More</a></div>
+
+        </div>
+        <div class="searchResults col-8 float-right" id="searchResults">
+          <div class="card-header"><h2>${Title}</h2></div>
+          <div><h3>${Subject} - ${day}</h3></div>
+          <div class="card-body"><p> ${description} </p></div>
+          <div><a href="${readMore}" target="top">Read More</a></div>
 
         </div>
     </div>
